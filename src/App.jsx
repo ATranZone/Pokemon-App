@@ -1,9 +1,8 @@
-import PokemonData from "./components/PokemonData";
-import DisplayAllPokemon from "./components/DisplayAllPokemon";
+import FetchPokemon from "./components/FetchPokemon";
 import "./App.css";
 
 function App() {
-  return <DisplayAllPokemon />;
+	return <FetchPokemon />;
 }
 
 export default App;
