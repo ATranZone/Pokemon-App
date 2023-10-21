@@ -1,4 +1,4 @@
-import FetchPokemon from "./components/FetchPokemon";
+import FetchPokemon from "./components/FetchPokemon/FetchPokemon";
 import "./App.css";
 
 function App() {

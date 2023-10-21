@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import DisplayPokemon from "./DisplayPokemon";
+import DisplayPokemon from "../DisplayPokemon/DisplayPokemon.jsx";
+import "./FetchPokemon.css";
 export default function DisplayAllPokemon() {
 	const [pokemon, setPokemon] = useState([]);
 
@@ -25,5 +26,16 @@ export default function DisplayAllPokemon() {
 		/>
 	));
 
-	return <ul>{pokemonList}</ul>;
+	return (
+		<table id="pokemon-list">
+			<tbody id="pokemon-table-body">
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Image</th>
+				</tr>
+				{pokemonList}
+			</tbody>
+		</table>
+	);
 }
